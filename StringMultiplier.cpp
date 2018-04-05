@@ -21,7 +21,7 @@ int StringMultiplier(std::string s, char delim) {
 			while (s[prevDelim + 1] == ' ')
 				++prevDelim;
 			while (s[nextDelim - 1] == ' ')
-				++nextDelim;
+				--nextDelim;
 			tmp = stoi(s.substr(prevDelim + 1, nextDelim - prevDelim - 1));
 			prevDelim = i;
 			found = true;
